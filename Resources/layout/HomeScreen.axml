@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:gravity="right">
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="392.5dp"
+        android:id="@+id/scrollView1">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:id="@+id/lsvHomeScreenDisplay"
+            android:layout_marginBottom="0.0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp">
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imbHomeIcon"
+            android:layout_marginRight="50dp" />
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imbTodayIcon" />
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imbNewTaskIcon"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+</LinearLayout>

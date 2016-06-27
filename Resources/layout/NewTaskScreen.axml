@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTaskName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Task Name"
+        android:textSize="20dp" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTaskDescription"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:height="150dp"
+        android:text="Task Description"
+        android:gravity="top"
+        android:textSize="15dp" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout1"
+        android:columnCount="3"
+        android:rowCount="2">
+        <TextView
+            android:text="Due Date:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView1"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:width="100dp"
+            android:gravity="right" />
+        <TextView
+            android:text="At"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView2"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:gravity="right"
+            android:width="100dp" />
+        <EditText
+            android:id="@+id/txtDueDate"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:width="150dp"
+            android:text="00/00/0000"
+            android:textSize="15dp"
+            android:gravity="center_horizontal" />
+        <EditText
+            android:id="@+id/txtDueDateTime"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:width="150dp"
+            android:text="00:00"
+            android:textSize="15dp"
+            android:gravity="center_horizontal" />
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/imbDueDate"
+            android:layout_column="2"
+            android:layout_row="0" />
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/imbDueDateTime"
+            android:layout_column="2"
+            android:layout_row="1" />
+    </GridLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:gravity="center_horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="30dp">
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/imbAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="60dp" />
+        <ImageButton
+            android:src="@android:drawable/ic_menu_gallery"
+            android:id="@+id/imbCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+</LinearLayout>
